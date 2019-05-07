@@ -1,0 +1,7 @@
+sockerserver跟httplib一样不是最好的 只是一个可以用的参考
+真正要锤炼的 python暂时不适合做socket 可以放到后面如果python有比较大的发展或者
+到玩go的时候在去研究
+
+
+尼玛这两天就相当于复习了epoll 文件描述符 socket这些东西 毕竟selector socketserver socket尤其是
+前两个在python中用处不大
