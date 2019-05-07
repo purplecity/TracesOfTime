@@ -1,0 +1,42 @@
+{
+    "log_level":"logging.INFO",
+    "backupAccountPath":"/User/local/",
+    "redisttl":180,
+    "gasPrice":20,
+    "gasLimit":42000,
+    "WithdrawPrefix":"withdraw",
+    "ResetPasswordPrefix":"ResetPassword",
+    "backend_host":"(localhost|127\\.0\\.0\\.1|192\\.[0-9]+\\.[0-9]+\\.[0-9]+|172\\.[0-9]+\\.[0-9]+\\.[0-9]+)",
+    "backend_port":"9010",
+    "mysql":{
+        "user":"root",
+        "host":"localhost",
+        "dbname":"PCE"
+    },
+    "redis":{
+        "host":"localhost",
+        "port":6379,
+        "db":0,
+        "retry_on_timeout":true,
+        "decode_responses":true,
+        "max_connections":3
+    },
+    "emailInfo":{
+        "server": "smtp.qq.com",
+        "port": 465,
+        "sender": "3308200258@qq.com",
+        "sender_password":"vowrttntbunydbcg",
+        "sender_name":"purplecity"
+    },
+    "InfuraInfo":{
+        "url":"https://mainnet.infura.io/v3/4db38258c9024f629a18768f9cf46ddd",
+        "timeout":10,
+        "UserAgent":"Web3.py/4.9.1/<class 'web3.providers.rpc.HTTPProvider'>",
+        "ContentType": "application/json"
+    },
+    "Games":{
+        "WC":"World Cup",
+        "SPD":"Spanish Primera Division"
+    }
+
+}

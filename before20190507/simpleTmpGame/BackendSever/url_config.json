@@ -1,0 +1,131 @@
+{
+    "/Regiser":{
+        "POST":{
+            "method":"Register",
+            "params":"{}",
+            "explain":"个人接口:注册"
+        }
+    },
+    "/Login":{
+        "POST":{
+            "method":"Login",
+            "params":"{}",
+            "explain":"个人接口:登录"
+        }
+    },
+    "/ResetPassword":{
+        "POST":{
+            "method":"ResetPassword",
+            "params":"{}",
+            "explain":"个人接口:重设密码"
+        }
+    },
+    "/Deposit":{
+        "POST":{
+            "method":"Deposit",
+            "params":"{}",
+            "explain":"个人接口:充币"
+        }
+    },
+    "/Withdraw":{
+        "POST":{
+            "method":"Withdraw",
+            "params":"{}",
+            "explain":"个人接口:提币"
+        }
+    },
+    "QueryDepositHistory":{
+        "POST":{
+            "method":"QueryDepositHistory",
+            "params":"",
+            "explain":"个人接口:查询充币记录"
+        }
+    },
+    "QueryWithdrawHistory":{
+        "POST":{
+            "method":"QueryWithdrawHistory",
+            "params":"",
+            "explain":"个人接口:查询提币记录"
+        }
+    },
+    "/QueryUserFunds":{
+        "POST":{
+            "method":"QueryUserFunds",
+            "params":"",
+            "explain":"个人接口:查询用户资产 包括总资产 可用资产 提币冻结资产 下注冻结资产"
+        }
+    },
+    "/SendVerificationCode":{
+        "POST":{
+            "method":"SendVerificationCode",
+            "params":"{}",
+            "explain":"系统接口:发送验证码"
+        }
+    },
+    "/ShowGameTemplate":{
+        "POST":{
+            "method":"ShowGameTemplate",
+            "params":"{}",
+            "explain":"系统接口:上传比赛信息模板"
+        }
+    },
+    "/UploadGameInfo":{
+        "POST":{
+            "method":"UploadGameInfo",
+            "params":"{}",
+            "explain":"系统接口:上传比赛信息
+                包括大条目和小条目
+                大条目就是所属赛事名 如世界杯英超中超等 小条目就是比赛信息 如皇马vs巴萨 开始时间08:00 10/04/2018等"
+        }
+    },
+    "/ShowAllGameType":{
+        "POST":{
+            "method":"ShowAllGameType",
+            "params":"{}",
+            "explain":"系统接口:展示所有大条目
+                对应于点击前端界面上一个比赛字段  会调用此接口 或者上传比赛信息的时候显示所有的赛事名"
+        }
+    },
+    "/ShowAllGameInformation":{
+        "POST":{
+            "method":"ShowAllGameInformation",
+            "params":"{}",
+            "explain":"系统接口:展示某个大条目下所有小条目
+                对应于点击前端界面上一个大条目 如世界杯 会调用此接口
+                按照比赛开始时间倒序排列"
+        }
+    },
+    "/ShowGamesBetInformation":{
+        "POST":{
+            "method":"ShowGamesBetInformation",
+            "params":"{}",
+            "explain":"系统接口:展示某个小条目的下注信息
+                对应于点击前端界面上一个小条目 如西甲大条目下的巴萨vs皇马这个小条目  会调用此接口
+                比赛前-- 下注信息:显示接受下注中   前端根据小条目的starttime限制下注时间来展示
+                比赛中-- 下注信息:显示所有下注信息有多少人赌哪边等
+                比赛后-- 下注信息:显示所有下注信息有多少人赌哪边等 "
+        }
+    },
+    "/UploadGameResult":{
+        "POST":{
+            "method":"UploadGameResult",
+            "params":"{}",
+            "explain":"系统接口:上传比赛结果  等同于开奖操作"
+        }
+    },
+    "/Bet":{
+        "POST":{
+            "method":"Bet",
+            "params":"",
+            "explain":"个人接口:下注"
+        }
+    },
+    "/QueryBetHistory":{
+        "POST":{
+            "method":"QueryBetHistory",
+            "params":"",
+            "explain":"个人接口:查询下注记录
+                result有2个  未开奖或者开奖结果"
+        }
+    }
+}
