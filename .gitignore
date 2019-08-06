@@ -1,3 +1,7 @@
 after20190507/go/*/.DS_Store
 after20190507/go/.DS_Store
 after20190507/.DS_Store
+after20190507/cc/.idea
+after20190507/cc/*/.idea
+after20190507/cc/*/cmake-build-debug
+
